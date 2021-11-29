@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  body {
+    font-family: 'Zen Old Mincho', serif;
+    background: linear-gradient(183deg, #e2e2e2 0%, #141329 100%);
+  }
+  
+  .redondear {
+    border-radius: 1.5rem;
+  }
+  
+  /*
+  ESTILOS BARRA DE NAVEGACION
+  */
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  
+  .nav-personal {
+    background: #5f2626;
+  }
+  
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("/img/icon1.png"); 
+  }
+
+  
+  /*
+  ESTILOS FONDOS PERSONALIZADOS
+  */
+
+  .bg-claro {
+    background-color: rgb(172, 172, 172);
+  }
+      
+  /*
+  ESTILOS FORMULARIOS
+  */
+  
+
+  label
+  {
+  display: block;
+  width: 100%;
+  }
+
+  input, textarea
+  {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  }
+  
+  textarea{
+    resize: both; 
+    max-height: 300px;
+    min-height: 100px;
+  }
+  
+  input, textarea:focus{
+    border: 1px 
+  }
+  input[type="submint"]{
+    margin-bottom: 0;
+    background: #5f2626;
+    color: black;
+    border: none;
+  }
+  
+  input[type="submint"]:hover {
+    background: #834949;
+  }
+
+  /*BOTONES*/
+  .btn-trabajos{
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    &:hover{
+      color: #5f2626;
+      
+    }
+  }
+
+  .mibotn{
+    padding: 10px 15px;
+  }
+  .card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: #5f2626;
+    &:hover{
+      background-color: #834949;
+    }
+}
+
+.submit{
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  &:hover{
+    color: #5f2626;
+    
+  }
+}
+
+/*GALERIA*/
+.grid-item {
+  width: 15vw;
+  height: auto;
+  float: left;
+  background: rgba(221, 34, 103, 0);
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.grid-item {
+  float: left;
+  width: 10vw;
+  height: auto;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+.grid-item--width2 { width: 15vw; }
